@@ -1,2 +1,4 @@
-package tdd;public class Car {
+package tdd;
+
+public class Car {
 }

@@ -1,2 +1,4 @@
-package tdd;public class HeartRateCalculator {
+package tdd;
+
+public class HeartRateCalculator {
 }
