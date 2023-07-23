@@ -380,9 +380,9 @@ public class MBTIPersonalityTest {
         System.out.println("Hello " + name + " You choose");
         for (String s : extrovertedVsIntrovertedOption) {
             if (s.equalsIgnoreCase("a")) {
-                introverted++;
-            } else {
                 extroverted++;
+            } else {
+                introverted++;
             }
         }
         for (String element : extrovertedVsIntroverted) {
@@ -461,7 +461,9 @@ public class MBTIPersonalityTest {
         output += b;
         output += c;
         output += d;
-        System.out.println(output);
+        System.out.println();
+        System.out.println("Your Personality Is " + output);
+        System.out.println();
         switch (output) {
             case "ENFJ" -> System.out.println("""
                     ENFJ personalites
@@ -734,5 +736,4 @@ public class MBTIPersonalityTest {
                     Finding an environment where they can work with good friends who understand their style and unpredictability, combining their creativity, sense of humor and hands-on approach to build practical solutions and things, will give ISTPs many happy years of building useful boxes – and admiring them from the outside.""");
             default -> System.out.println("Your Case IS Special! Meet a Therapist");
         }
-    }
-}
+    }}
