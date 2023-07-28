@@ -13,7 +13,6 @@ public class CardValidator {
                }
            }
            return checker;
-
         }
     public int checker2(long number){
         int checker = 0;
@@ -30,8 +29,6 @@ public class CardValidator {
             }
         }
         return checker;}
-
-
     public int checker3(long number){
         int checker = 0;
         String converter = "";
@@ -59,7 +56,6 @@ public class CardValidator {
             else type = "Invalid Card Type";
             return type;
         }
-
         public void creditCardValidator(){
         System.out.println("Hello, Kindly Enter Card To verify: ");
         long number = input.nextLong();
