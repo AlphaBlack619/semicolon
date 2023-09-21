@@ -51,6 +51,11 @@ public class Bank {
     }
 
     public void ChangeCustomerName(String hashtag, String firstName, String lastName, String pin) {
-        findAccount(hashtag).setAccountName(firstName, lastName,pin);
+        findAccount(hashtag).setAccountName(firstName, lastName, pin);
+    }
+
+    @Override
+    public java.lang.String toString() {
+        return super.toString();
     }
 }

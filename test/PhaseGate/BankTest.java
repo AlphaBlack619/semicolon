@@ -51,4 +51,8 @@ class BankTest {
         bank.ChangeCustomerName("#1","Alpha","White","pin");
         assertEquals("Alpha White",bank.findAccount("#1").getAccountName());
     }
+
+    @Test
+    void testToString() {
+    }
 }

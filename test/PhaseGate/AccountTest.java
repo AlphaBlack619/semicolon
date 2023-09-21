@@ -64,4 +64,9 @@ class AccountTest {
         String name = "Alpha Nero";
         assertEquals(name,account.getAccountName());
     }
+    @Test
+    void checkForValidPinException(){
+        Account account = new Account("Alpha","Nero",bank.generateAccountNumber(),"pin");
+        assertThrowsExactly(IllegalArgumentException.class,()->account.validate("Pin"));
+    }
 }

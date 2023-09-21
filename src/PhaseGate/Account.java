@@ -22,10 +22,14 @@ public class Account {
         this.accountName = newName;}
     }
     public boolean validate( String newPin){
-        return pin.equals(newPin);
+        if ( pin.equals(newPin)) return true;
+        else throw new IllegalArgumentException("Invalid pin");
     }
 
     public void deposit(int amount) {
+        if (amount < 0) {
+            throw new IllegalArgumentException ("Amount must not be negative");
+        }
         if (validate(pin)){
             balance += amount;}
     }
@@ -42,6 +46,7 @@ public class Account {
     public void withDraw(int i, String pin) {
         if (validate(pin) && i < balance){
             balance-= i;}
+        if (i > balance) throw new IllegalArgumentException ("Amount greater than balance");
     }
     public String getAccountName() {
         return this.accountName;
