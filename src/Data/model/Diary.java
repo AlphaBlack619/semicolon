@@ -1,10 +1,16 @@
 package Data.model;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
-public class Diary {
+public  class Diary {
+    public void setUser_Name(String user_Name) {
+        this.user_Name = user_Name;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     private  String user_Name;
     private String password;
     private boolean isLock;
@@ -58,7 +64,7 @@ public class Diary {
         return null;
     }
 
-    public void upDate(int i, String title, String body) {
+    public void upDateEntry(int i, String title, String body) {
         findEntry(i).upDateTitle(title);
         findEntry(i).upDateBody(body);
     }
