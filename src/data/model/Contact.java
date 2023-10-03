@@ -48,8 +48,7 @@ public class Contact {
 
 
     public LocalDateTime getTime() {
-        return time;
-    }
+        return time;}
 
     @Override
     public String toString() {
