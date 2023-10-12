@@ -17,12 +17,10 @@ public class DiaryRepositoriesImpl implements DiaryRepositories {
         diaryList.add(diary);
         return diary;
     }
-
     @Override
     public void delete(Diary diary) {
         diaryList.remove(diary);
     }
-
     @Override
     public Diary findById(int id) {
         for (Diary diary: diaryList) {
@@ -31,20 +29,23 @@ public class DiaryRepositoriesImpl implements DiaryRepositories {
             }
         } return null;
     }
-
+    public Diary findByUser(String id) {
+        for (Diary diary: diaryList) {
+            if (diary.getUser_Name().equals(id)){
+                return diary;
+            }
+        } return null;
+    }
     @Override
     public Iterable<Diary> findAll() {
         return diaryList;
     }
-
     @Override
     public long count() {
         return diaryList.size();
     }
-
     @Override
     public void clear() {
         diaryList.clear();
     }
-
 }

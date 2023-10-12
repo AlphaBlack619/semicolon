@@ -9,4 +9,6 @@ public interface DiaryRepositories {
     Iterable<Diary> findAll();
     long count();
     void clear();
+
+    Diary findByUser(String username);
 }
