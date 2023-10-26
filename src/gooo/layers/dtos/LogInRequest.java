@@ -1,6 +1,7 @@
-package dtos;
+package gooo.layers.dtos;
 
-public class RegisterUserRequest {
+public class LogInRequest {
+
     String username;
     String password;
     public String getUsername() {

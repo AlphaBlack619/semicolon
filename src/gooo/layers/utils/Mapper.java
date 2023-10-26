@@ -1,10 +1,10 @@
-package utils;
+package gooo.layers.utils;
 
-import Data.model.Diary;
-import Data.model.Entry;
-import dtos.CreateEntryRequest;
-import dtos.RegisterUserRequest;
-import dtos.FindEntryResponse;
+import gooo.layers.Data.model.Diary;
+import gooo.layers.Data.model.Entry;
+import gooo.layers.dtos.CreateEntryRequest;
+import gooo.layers.dtos.RegisterUserRequest;
+import gooo.layers.dtos.FindEntryResponse;
 
 public class Mapper {
     public static void map(RegisterUserRequest registerUserRequest, Diary diary){

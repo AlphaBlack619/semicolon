@@ -1,4 +1,4 @@
-package dtos;
+package gooo.layers.dtos;
 
 import lombok.Data;
 

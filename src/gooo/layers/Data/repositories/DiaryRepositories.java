@@ -1,6 +1,6 @@
-package Data.repositories;
+package gooo.layers.Data.repositories;
 
-import Data.model.Diary;
+import gooo.layers.Data.model.Diary;
 
 public interface DiaryRepositories {
     Diary save(Diary diary);

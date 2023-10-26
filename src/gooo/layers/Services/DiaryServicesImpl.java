@@ -1,12 +1,11 @@
-package Services;
+package gooo.layers.Services;
 
-import Data.model.Diary;
-import Data.model.Entry;
-import Data.repositories.DiaryRepositories;
-
-import Data.repositories.DiaryRepositoriesImpl;
-import dtos.*;
-import static utils.Mapper.map;
+import gooo.layers.Data.model.Diary;
+import gooo.layers.Data.model.Entry;
+import gooo.layers.Data.repositories.DiaryRepositories;
+import gooo.layers.Data.repositories.DiaryRepositoriesImpl;
+import gooo.layers.dtos.*;
+import gooo.layers.utils.Mapper;
 
 
 public class DiaryServicesImpl implements DiaryService {
@@ -19,7 +18,7 @@ public class DiaryServicesImpl implements DiaryService {
     public void register(RegisterUserRequest registerUserRequest) {
         validateUser(registerUserRequest.getUsername());
         Diary newDiary = new Diary();
-        map(registerUserRequest, newDiary);
+        Mapper.map(registerUserRequest, newDiary);
         diaryRepository.save(newDiary);
     }
 
@@ -78,7 +77,7 @@ public class DiaryServicesImpl implements DiaryService {
     @Override
     public FindEntryResponse findEntry(FindEntryRequest findEntryRequest) {
         Entry entry = entryServices.findEntry(findEntryRequest);
-        return map(entry);
+        return Mapper.map(entry);
     }
 
     @Override

@@ -1,4 +1,4 @@
-package Data.model;
+package gooo.layers.Data.model;
 
 import lombok.Data;
 

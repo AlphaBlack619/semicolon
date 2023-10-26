@@ -1,11 +1,11 @@
-package Services;
+package gooo.layers.Services;
 
-import Data.model.Entry;
-import Data.repositories.EntryRepository;
-import Data.repositories.EntryRepositoryImpl;
-import utils.Mapper;
-import dtos.CreateEntryRequest;
-import dtos.FindEntryRequest;
+import gooo.layers.Data.model.Entry;
+import gooo.layers.Data.repositories.EntryRepository;
+import gooo.layers.Data.repositories.EntryRepositoryImpl;
+import gooo.layers.utils.Mapper;
+import gooo.layers.dtos.CreateEntryRequest;
+import gooo.layers.dtos.FindEntryRequest;
 public class EntryServicesImpl implements EntryServices {
 
     private EntryRepository entryRepository =  new EntryRepositoryImpl();

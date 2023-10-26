@@ -1,8 +1,8 @@
-package Services;
+package gooo.layers.Services;
 
-import Data.model.Entry;
-import dtos.CreateEntryRequest;
-import dtos.FindEntryRequest;
+import gooo.layers.Data.model.Entry;
+import gooo.layers.dtos.CreateEntryRequest;
+import gooo.layers.dtos.FindEntryRequest;
 
 public interface EntryServices {
     Entry addEntry(CreateEntryRequest createEntryRequest);

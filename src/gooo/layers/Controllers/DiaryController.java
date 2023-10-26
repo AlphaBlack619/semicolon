@@ -1,12 +1,12 @@
-package Controllers;
+package gooo.layers.Controllers;
 
-import dtos.CreateEntryRequest;
-import dtos.FindEntryRequest;
-import dtos.LogInRequest;
-import dtos.RegisterUserRequest;
+import gooo.layers.Services.DiaryService;
+import gooo.layers.dtos.CreateEntryRequest;
+import gooo.layers.dtos.RegisterUserRequest;
+import gooo.layers.dtos.FindEntryRequest;
+import gooo.layers.dtos.LogInRequest;
 import org.springframework.web.bind.annotation.*;
-import Services.DiaryService;
-import Services.DiaryServicesImpl;
+import gooo.layers.Services.DiaryServicesImpl;
 
 
 @RestController

@@ -1,6 +1,6 @@
-package Data.repositories;
+package gooo.layers.Data.repositories;
 
-import Data.model.Entry;
+import gooo.layers.Data.model.Entry;
 
 import java.util.ArrayList;
 import java.util.List;

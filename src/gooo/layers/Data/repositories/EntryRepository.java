@@ -1,6 +1,6 @@
-package Data.repositories;
+package gooo.layers.Data.repositories;
 
-import Data.model.Entry;
+import gooo.layers.Data.model.Entry;
 
 public interface EntryRepository {
     Entry save(Entry entry);

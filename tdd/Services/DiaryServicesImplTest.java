@@ -1,5 +1,6 @@
 package Services;
 
+import gooo.layers.Services.DiaryServicesImpl;
 import org.junit.jupiter.api.Test;
 
 class DiaryServicesImplTest {

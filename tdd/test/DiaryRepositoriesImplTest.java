@@ -1,7 +1,7 @@
 package test;
 
-import Data.model.Diary;
-import Data.repositories.DiaryRepositoriesImpl;
+import gooo.layers.Data.model.Diary;
+import gooo.layers.Data.repositories.DiaryRepositoriesImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

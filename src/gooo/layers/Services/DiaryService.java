@@ -1,8 +1,8 @@
-package Services;
+package gooo.layers.Services;
 
-import Data.model.Diary;
-import Data.model.Entry;
-import dtos.*;
+import gooo.layers.Data.model.Diary;
+import gooo.layers.Data.model.Entry;
+import gooo.layers.dtos.*;
 
 public interface DiaryService {
     void register(RegisterUserRequest registerUserRequest);
