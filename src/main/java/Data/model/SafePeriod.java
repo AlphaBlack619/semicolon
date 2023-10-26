@@ -12,6 +12,7 @@ public class SafePeriod {
     }
 
     public LocalDate getSafePeriodStartDate(LocalDate localDate) {
+
         safePeriodStartDate = localDate.plusDays(18);
         return safePeriodStartDate;
     }
